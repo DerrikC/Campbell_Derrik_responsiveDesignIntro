@@ -1,0 +1,20 @@
+.box1{
+  background-color: purple;
+  width: 300px;
+  height: 300px;
+}
+
+.box2{
+  background-color: green;
+  width: 300px;
+  height: 300px;
+}
+
+/*start at mobile size then work up from there*/
+
+@media only screen and (min-width: 768px){
+  .box1 {
+    background-color: goldenrod;
+    border: black;
+  }
+}

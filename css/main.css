@@ -1,20 +1,69 @@
+main { width: 95%; margin: 0 auto; }
+
+main > div {display: inline-block; }
+
 .box1{
+  display: block;
   background-color: purple;
-  width: 300px;
+  width: 48%;
   height: 300px;
 }
 
 .box2{
+  display: block;
   background-color: green;
-  width: 300px;
+  width: 48%;
   height: 300px;
 }
 
+.description {
+  display: none;
+}
+
+.image_container {
+  width: 30%;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
 /*start at mobile size then work up from there*/
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 376px){
   .box1 {
     background-color: goldenrod;
+    display: inline-block;
     border: black;
+    width: 100%;
+  }
+
+  .box2 {
+    background-color: orange;
+    display: inline-block;
+    border: black;
+    width: 100%;
+
+  }
+}
+
+/* media query for tablet */
+
+@media only screen and (min-width:768px){
+  .box1 {
+    background-color: goldenrod;
+    display: inline-block;
+    border: black;
+    width: 75%;
+  }
+
+  .box2 {
+    background-color: orange;
+    display: none;
+    border: black;
+  }
+
+  .description {
+
   }
 }
